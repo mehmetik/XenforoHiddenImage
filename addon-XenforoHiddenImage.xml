@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon />
+<addon addon_id="XenforoHiddenImage" title="Hiding images with JS on Xenforo" version_string="1.0" version_id="1" url="https://www.github.com/mehmetik" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+    <code_event_listeners>
+        <listener event_id="load_class_view" execute_order="10" callback_class="Yazilimsoft_XenforoHiddenImage_Listener" callback_method="loadClassListener" active="1" hint="" description=""/>
+    </code_event_listeners>
+    <optiongroups>
+        <group group_id="YS_XenforoHiddenImage" display_order="1" debug_only="0"/>
+        <option option_id="hidden_message" edit_format="textbox" data_type="string" can_backup="1">
+            <default_value>&lt; Click to open Image &gt;</default_value>
+            <relation group_id="YS_XenforoHiddenImage" display_order="2"/>
+        </option>
+        <option option_id="image_hidden_status" edit_format="onoff" data_type="boolean" can_backup="1">
+            <relation group_id="YS_XenforoHiddenImage" display_order="1"/>
+        </option>
+    </optiongroups>
+    <phrases>
+        <phrase title="option_hidden_message_explain" version_id="1" version_string="1.0"><![CDATA[Write the message that will appear to guests.]]></phrase>
+        <phrase title="option_hidden_message_message" version_id="1" version_string="1.0"><![CDATA[Message to the Guests]]></phrase>
+        <phrase title="option_group_YS_XenforoHiddenImage" version_id="0" version_string=""><![CDATA[Hide Images with JS]]></phrase>
+        <phrase title="option_group_YS_XenforoHiddenImage_description" version_id="0" version_string=""><![CDATA[Settings]]></phrase>
+        <phrase title="option_image_hidden_status" version_id="1" version_string="1.0"><![CDATA[Hidden Images]]></phrase>
+        <phrase title="option_image_hidden_status_explain" version_id="1" version_string="1.0"><![CDATA[Hiding images with JS on Xenforo]]></phrase>
+    </phrases>
+</addon>
