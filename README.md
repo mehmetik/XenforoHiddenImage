@@ -1,4 +1,4 @@
-# Xenforo Hidden Image for Unregister Visitors
+# Xenforo Hidden Image for Unregistered Visitors
 Hiding images with JS on Xenforo V1.X  
   
 Hiding images to guest user groups in Xenforo forums with the help of javascript.  
