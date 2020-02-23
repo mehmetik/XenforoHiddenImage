@@ -11,7 +11,6 @@ class Yazilimsoft_XenforoHiddenImage_ViewPublic_XenforoHiddenImage extends XFCP_
             $visitor = XenForo_Visitor::getInstance();
 
             foreach ($this->_params['posts'] AS &$message) {
-
                 if (!empty($options->image_hidden_status) AND !$visitor['user_id']) {
                     if (isset($_GET['amp'])) {
                     } else {
