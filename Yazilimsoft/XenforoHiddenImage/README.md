@@ -21,5 +21,5 @@ return false;
 
 ## How to Install and Upload Directory
 Install and Upload directory is : 
-> library/Yazilimsoft/
+> library/
 
